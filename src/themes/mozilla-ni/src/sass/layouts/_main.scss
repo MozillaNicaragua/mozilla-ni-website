@@ -47,6 +47,7 @@
     img {
         max-width: 200px;
     }
+
 }
 
 .download-section {
@@ -66,6 +67,14 @@
 .members-section {
     padding: 50px 0;
     background-color: $color-gray-light;
+}
+
+.not-found-page {
+    padding: 150px 0;
+    background-color: #d7d9f2;
+    background-image: url('https://www.mozilla.org/media/img/home/colon-slash-slash.2c709d7c73c3.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 
 .container {

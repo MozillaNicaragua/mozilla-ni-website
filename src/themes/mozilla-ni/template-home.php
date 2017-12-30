@@ -40,21 +40,21 @@ $members = new WP_Query( $member_args );
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <i class="fa fa-shield circle-icons" aria-hidden="true"></i>
-                                <a href="https://advocacy.mozilla.org/es/encrypt/codemoji/1" target="_blank">
+                                <a href="https://advocacy.mozilla.org/es/encrypt/codemoji/1" target="_blank" class="text-black">
                                     Defiende la encriptación
                                 </a>
                             </div>
                             <div class="col-12 col-md-6">
                                 <i class="fa fa-globe circle-icons" aria-hidden="true"></i>
-                                <a href="https://learning.mozilla.org/en-US/" target="_blank">Enseñar la Web</a>
+                                <a href="https://learning.mozilla.org/en-US/" target="_blank" class="text-black">Enseñar la Web</a>
                             </div>
                             <div class="col-12 col-md-6">
                                 <i class="fa fa-wrench circle-icons" aria-hidden="true"></i>
-                                <a href="https://www.mozilla.org/en-US/about/policy/lean-data/" target="_blank">Prueba el kit de herramientas Lean Data</a>
+                                <a href="https://www.mozilla.org/en-US/about/policy/lean-data/" target="_blank" class="text-black">Prueba el kit de herramientas Lean Data</a>
                             </div>
                             <div class="col-12 col-md-6">
                                 <i class="fa fa-flag circle-icons" aria-hidden="true"></i>
-                                <a href="https://internethealthreport.org/v01/es/" target="_blank">
+                                <a href="https://internethealthreport.org/v01/es/" target="_blank" class="text-black">
                                     Lee nuestro Reporte de Salud de Internet
                                 </a>
                             </div>
@@ -119,7 +119,7 @@ $members = new WP_Query( $member_args );
                                 <div class="card-member">
                                     <img src="<?php the_post_thumbnail_url('full') ?>" alt="<?php the_title() ?>">
                                     <h4 class="card-name"><?php the_title() ?></h4>
-                                    <span class="card-position"><?php the_field( 'member_position' ); ?></span>
+                                    <span class="card-position"><?php the_field( 'member_ocupation' ); ?></span>
                                     <div class="card-description">
                                         <?php the_content(); ?>
                                     </div>

@@ -54,13 +54,13 @@ $github = get_field( 'theme_github', 'option' );
                 <h4 class="subtitle">Mozilla Nicaragua</h4>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a href="#" class="nav-link" target="_blank">Blog / Noticias</a>
+                        <a href="/blog/" class="nav-link" target="_blank">Blog / Noticias</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" target="_blank">Eventos</a>
+                        <a href="/eventos/" class="nav-link" target="_blank">Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" target="_blank">Contacto</a>
+                        <a href="/contacto/" class="nav-link" target="_blank">Contacto</a>
                     </li>
                 </ul>
             </div>

@@ -17,7 +17,7 @@ get_header(); ?>
 	<main class="main">
 		<div class="container pt-5">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 text-center">
 					<h1 class="title mb-5">Blog</h1>
 				</div>
 				<?php if ( have_posts() ) : ?>

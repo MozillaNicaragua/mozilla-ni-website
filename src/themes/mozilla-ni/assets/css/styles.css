@@ -30,6 +30,9 @@ a, button {
 .text-primary {
   color: #45a1ff; }
 
+.text-black {
+  color: #0c0c0d; }
+
 .circle-icons {
   border-radius: 50%;
   border: 2px solid #202020;
@@ -484,6 +487,13 @@ img.mfp-img {
   padding: 50px 0;
   background-color: #ededf0; }
 
+.not-found-page {
+  padding: 150px 0;
+  background-color: #d7d9f2;
+  background-image: url("https://www.mozilla.org/media/img/home/colon-slash-slash.2c709d7c73c3.svg");
+  background-repeat: no-repeat;
+  background-position: left center; }
+
 .container {
   max-width: 1200px;
   width: 100%; }
@@ -565,6 +575,9 @@ img.mfp-img {
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     font-family: "Zilla Slab", monospace;
     font-size: 18px; }
+    .post .post-content img {
+      max-width: 100%;
+      height: auto; }
     .post .post-content p,
     .post .post-content div,
     .post .post-content ul,
@@ -623,6 +636,11 @@ img.mfp-img {
       text-align: right; }
       .post .post-navigation .nav-links .nav-next:after {
         content: "Siguiente"; }
+  @media (max-width: 768px) {
+    .post .p-5 {
+      padding: 20px !important; }
+    .post .post-headline {
+      font-size: 30px; } }
 
 .gallery {
   display: -webkit-box;
@@ -633,9 +651,24 @@ img.mfp-img {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   padding: 15px 0; }
+  .gallery .gallery-item {
+    padding: 0 10px; }
+    .gallery .gallery-item img {
+      max-width: 100%;
+      height: auto; }
+  .gallery.gallery-columns-1 .gallery-item {
+    width: 100%; }
+  .gallery.gallery-columns-2 .gallery-item {
+    width: 50%; }
   .gallery.gallery-columns-3 .gallery-item {
-    padding: 0 10px;
     width: 33.333333%; }
+  .gallery.gallery-columns-4 .gallery-item {
+    width: 25%; }
+  .gallery.gallery-columns-6 .gallery-item {
+    width: 16.666%; }
+  @media (max-width: 768px) {
+    .gallery .gallery-item {
+      width: 100% !important; } }
 
 h1 {
   color: red; }
@@ -699,6 +732,17 @@ h1 {
     font-family: "Zilla Slab", monospace;
     font-size: 16px;
     margin-top: 10px; }
+
+.card {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); }
+  .card .card-img-top {
+    max-width: 100%; }
+  .card .card-body {
+    padding: 15px; }
+  .card .card-title {
+    font-family: "Zilla Slab", monospace;
+    font-weight: bold;
+    font-size: 22px; }
 
 .nav a {
   display: block;

@@ -29,7 +29,7 @@ $header_logo = get_field( 'theme_header_logo', 'option' );
 	        <div class="row">
 	            <div class="col-12">
 	                <nav class="nav-container">
-	                    <a href="/" target="_blank">
+	                    <a href="/">
 	                    	<?php if ( $header_logo ) : ?>
 	                        	<img src="<?php echo $header_logo; ?>" alt="Mozilla Nicaragua" class="primary-logo" />
 	                        <?php else: ?>
