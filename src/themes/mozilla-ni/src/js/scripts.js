@@ -9,4 +9,5 @@ $(document).ready(function(){
     menu_mobile.find('.close-modal').on('click', function(){
         menu_mobile.removeClass('active');
     });
+
 });
