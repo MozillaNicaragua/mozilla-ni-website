@@ -5,6 +5,11 @@ $home_posts_args = array(
     'post_type' => 'post',
     'posts_per_page' => 3);
 $home_posts = new WP_Query( $home_posts_args );
+$member_args = array(
+    'post_type' => 'members',
+    'posts_per_page' => 4,
+    'orderby' => 'rand');
+$members = new WP_Query( $member_args );
 
 ?>
 
@@ -97,7 +102,7 @@ $home_posts = new WP_Query( $home_posts_args );
                         <?php endwhile; ?>
                     <?php endif; ?>
                     <div class="col-12 text-center">
-                        <a href="blog.html" class="btn btn-primary">Ver mas</a>
+                        <a href="/blog/" class="btn btn-primary">Ver mas</a>
                     </div>
                 </div>
             </div>
@@ -108,37 +113,22 @@ $home_posts = new WP_Query( $home_posts_args );
                     <div class="col-12">
                         <h2 class="title text-center mb-5">Colaboradores de Mozilla Nicaragua</h2>
                     </div>
-                    <div class="col-3">
-                        <div class="card-member">
-                            <img src="http://www.mozilla-ni.org/wp-content/uploads/2017/04/david.jpg" alt="">
-                            <h4 class="card-name">David Blanchard</h4>
-                            <span class="card-position">Desarrollador de Software</span>
-                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ut, sit sint accusamus doloremque nulla provident reprehenderit corporis.</p>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card-member">
-                            <img src="http://www.mozilla-ni.org/wp-content/uploads/2017/04/Ibel-1.jpg" alt="">
-                            <h4 class="card-name">Ibel Zuniga</h4>
-                            <span class="card-position">Desarrollador de Software</span>
-                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ut, sit sint accusamus doloremque nulla provident reprehenderit corporis.</p>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card-member">
-                            <img src="http://www.mozilla-ni.org/wp-content/uploads/2017/04/anita-1.jpg" alt="">
-                            <h4 class="card-name">Ana Sofia</h4>
-                            <span class="card-position">Desarrollador de Software</span>
-                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ut, sit sint accusamus doloremque nulla provident reprehenderit corporis.</p>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card-member">
-                            <img src="http://www.mozilla-ni.org/wp-content/uploads/2017/04/david.jpg" alt="">
-                            <h4 class="card-name">David Blanchard</h4>
-                            <span class="card-position">Desarrollador de Software</span>
-                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ut, sit sint accusamus doloremque nulla provident reprehenderit corporis.</p>
-                        </div>
+                    <?php if ( $members->have_posts() ) : ?>
+                        <?php while ( $members->have_posts() ) : $members->the_post(); ?>
+                            <div class="col-3">
+                                <div class="card-member">
+                                    <img src="<?php the_post_thumbnail_url('full') ?>" alt="<?php the_title() ?>">
+                                    <h4 class="card-name"><?php the_title() ?></h4>
+                                    <span class="card-position"><?php the_field( 'member_position' ); ?></span>
+                                    <div class="card-description">
+                                        <?php the_content(); ?>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                    <div class="col-12 text-center mt-5">
+                        <a href="/colaboradores/" class="btn btn-primary">Ver mas colaboradores</a>
                     </div>
                 </div>
             </div>
