@@ -1,5 +1,12 @@
 <?php /* Template Name: Home */
-get_header(); ?>
+get_header(); 
+
+$home_posts_args = array(
+    'post_type' => 'post',
+    'posts_per_page' => 3);
+$home_posts = new WP_Query( $home_posts_args );
+
+?>
 
     <main>
         <section class="hero-page" style="background-image:url('<?php echo get_template_directory_uri() ?>/assets/mozilla-ni-header.jpg');">
@@ -72,45 +79,23 @@ get_header(); ?>
                     <div class="col-12">
                         <h2 class="title text-center mb-5">Blog</h2>
                     </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card-blog">
-                            <div class="card-image">
-                                <img src="https://blog.mozilla.org/wp-content/uploads/2017/12/Firefox-on-Fire-TV-announcement-600x330.png" alt="Imagen">
+                    <?php if ( $home_posts->have_posts() ) : ?>
+                        <?php while ( $home_posts->have_posts() ) : $home_posts->the_post(); ?>
+                            <div class="col-12 col-md-4">
+                                <div class="card-blog">
+                                    <div class="card-image">
+                                        <img src="<?php the_post_thumbnail_url('card-blog'); ?>" alt="<?php the_title(); ?>">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">
+                                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                        </h4>
+                                        <p class="card-excerpt"><?php the_excerpt(); ?></p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Firefox is Now on Amazon Fire TV – Happy Holiday Watching</a>
-                                </h4>
-                                <p class="card-excerpt">As many of us prepare to be with families and close friends for the holidays, I’m excited to announce that Mozilla is bringing the speed of Firefox and the power of the web onto the TV with an established family of streaming media devices, just in time for the holidays.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card-blog">
-                            <div class="card-image">
-                                <img src="https://blog.mozilla.org/wp-content/uploads/2017/12/Firefox-on-Fire-TV-announcement-600x330.png" alt="Imagen">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Firefox is Now on Amazon Fire TV – Happy Holiday Watching</a>
-                                </h4>
-                                <p class="card-excerpt">As many of us prepare to be with families and close friends for the holidays, I’m excited to announce that Mozilla is bringing the speed of Firefox and the power of the web onto the TV with an established family of streaming media devices, just in time for the holidays.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card-blog">
-                            <div class="card-image">
-                                <img src="https://blog.mozilla.org/wp-content/uploads/2017/12/Firefox-on-Fire-TV-announcement-600x330.png" alt="Imagen">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Firefox is Now on Amazon Fire TV – Happy Holiday Watching</a>
-                                </h4>
-                                <p class="card-excerpt">As many of us prepare to be with families and close friends for the holidays, I’m excited to announce that Mozilla is bringing the speed of Firefox and the power of the web onto the TV with an established family of streaming media devices, just in time for the holidays.</p>
-                            </div>
-                        </div>
-                    </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
                     <div class="col-12 text-center">
                         <a href="blog.html" class="btn btn-primary">Ver mas</a>
                     </div>

@@ -134,6 +134,8 @@ function mozilla_ni_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'mozilla_ni_scripts' );
 
+add_image_size( 'card-blog', 600, 330 ); 
+
 /**
  * Implement the Custom Header feature.
  */
