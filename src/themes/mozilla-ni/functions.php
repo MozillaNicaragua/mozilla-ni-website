@@ -150,6 +150,16 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Include the custom post types
+ */
+require get_template_directory() . '/inc/posttypes.php';
+
+/**
+ * Include the advance custom fields
+ */
+require get_template_directory() . '/inc/acf.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
