@@ -122,7 +122,7 @@ add_action( 'widgets_init', 'mozilla_ni_widgets_init' );
 function mozilla_ni_scripts() {
 	wp_enqueue_style( 'mozilla-ni-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'mozilla-ni-vendor', get_template_directory_uri() . '/css/vendor.css' );
-	wp_enqueue_style( 'mozilla-ni-theme', get_template_directory_uri() . '/css/theme.css' );
+	wp_enqueue_style( 'mozilla-ni-theme', get_template_directory_uri() . '/css/styles.css' );
 
 	wp_enqueue_script( 'mozilla-ni-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

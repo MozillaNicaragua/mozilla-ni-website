@@ -1,0 +1,198 @@
+body,
+p,
+a,
+ul,
+li,
+strong,
+blockquote {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0c0c0d; }
+
+p {
+  margin-bottom: 10px !important; }
+
+.title, .subtitle {
+  font-family: "Zilla Slab", monospace;
+  font-weight: bold;
+  font-size: 36px;
+  color: #0c0c0d;
+  margin-bottom: 20px; }
+
+.subtitle {
+  font-size: 18px; }
+
+.text-white {
+  color: #FFFFFF; }
+
+.circle-icons {
+  border-radius: 50%;
+  border: 2px solid #202020;
+  font-size: 23px;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px auto; }
+
+.mx-width-400 {
+  max-width: 400px;
+  margin: 0 auto; }
+
+.hero-page {
+  background: #0B8EF6;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("/assets/mozilla-ni-header.jpg");
+  height: 550px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 100px; }
+  .hero-page .title, .hero-page .subtitle {
+    font-size: 48px; }
+  .hero-page p {
+    font-size: 18px;
+    max-width: 450px; }
+  .hero-page .title, .hero-page .subtitle,
+  .hero-page p {
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9); }
+
+.about-page {
+  padding: 50px 0;
+  background-color: #d7d9f2;
+  background-image: url("https://www.mozilla.org/media/img/home/colon-slash-slash.2c709d7c73c3.svg");
+  background-repeat: no-repeat; }
+  .about-page .about-mozilla {
+    border-right: 1px solid #505050;
+    padding-right: 30px; }
+  .about-page img {
+    max-width: 200px; }
+
+.download-section {
+  background: -webkit-linear-gradient(left, #4C00AF, #00CDEF);
+  background: linear-gradient(to right, #4C00AF, #00CDEF);
+  padding: 50px 0; }
+
+.blog-section {
+  padding: 50px 0;
+  background-color: #FFFFFF; }
+
+.members-section {
+  padding: 50px 0;
+  background-color: #ededf0; }
+
+.header-site {
+  position: relative;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #EEEEEE;
+  width: 100%; }
+  .header-site .nav-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 85px; }
+    .header-site .nav-container .nav-link {
+      font-weight: bold; }
+
+.primary-logo {
+  width: 120px; }
+
+.main-footer {
+  background-color: #FFFFFF;
+  position: relative;
+  border-top: 1px solid #cacaca;
+  padding: 40px 0; }
+  .main-footer .footer-logo {
+    max-width: 130px;
+    margin-bottom: 25px; }
+  .main-footer .nav-link {
+    padding-left: 0; }
+
+h1 {
+  color: red; }
+
+.btn-outline-success {
+  border: 2px solid #00DE20;
+  border-radius: 50px;
+  color: #00DE20;
+  font-weight: bold; }
+  .btn-outline-success:hover {
+    background: #00DE20;
+    color: #FFFFFF;
+    border: 2px solid #00DE20; }
+
+.btn-rounded-success {
+  border: 2px solid #00DE20;
+  border-radius: 50px;
+  color: #FFFFFF;
+  background: #00DE20;
+  font-weight: bold; }
+  .btn-rounded-success:hover {
+    background: #00b51a;
+    color: #FFFFFF;
+    border: 2px solid #00b51a; }
+
+.card-blog {
+  position: relative;
+  margin-bottom: 30px; }
+  .card-blog .card-image {
+    margin-bottom: 15px; }
+    .card-blog .card-image > img {
+      width: 100%; }
+  .card-blog .card-title {
+    font-family: "Zilla Slab", monospace; }
+    .card-blog .card-title > a {
+      font-size: 26px;
+      font-weight: bold;
+      font-family: "Zilla Slab", monospace; }
+  .card-blog .card-excerpt {
+    font-family: "Zilla Slab", monospace; }
+
+.card-member {
+  position: relative;
+  text-align: center; }
+  .card-member img {
+    border-radius: 50%;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block; }
+  .card-member .card-name {
+    font-size: 20px;
+    font-family: "Zilla Slab", monospace;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0; }
+  .card-member .card-position {
+    font-size: 14px;
+    font-style: italic; }
+  .card-member .card-description {
+    font-family: "Zilla Slab", monospace;
+    font-size: 16px;
+    margin-top: 10px; }

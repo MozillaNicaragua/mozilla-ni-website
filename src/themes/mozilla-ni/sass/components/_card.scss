@@ -1,0 +1,57 @@
+.card-blog {
+    position: relative;
+    margin-bottom: 30px;
+
+    .card-image {
+        margin-bottom: 15px;
+
+        >img {
+            width: 100%;
+        }
+    }
+
+    .card-title {
+        font-family: $font-zilla;
+        >a {
+            font-size: 26px;
+            font-weight: bold;
+            font-family: $font-zilla;
+        }
+    }
+
+    .card-excerpt {
+        font-family: $font-zilla;
+    }
+}
+
+.card-member {
+    position: relative;
+    text-align: center;
+    
+    img {
+        border-radius: 50%;
+        max-width: 200px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .card-name {
+        font-size: 20px;
+        font-family: $font-zilla;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .card-position {
+        font-size: 14px;
+        font-style: italic;
+    }
+
+
+    .card-description {
+        font-family: $font-zilla;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}

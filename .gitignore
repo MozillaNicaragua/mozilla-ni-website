@@ -1,3 +1,4 @@
 wp-config.php
 media/
 advanced-custom-fields-pro/
+node_modules/
