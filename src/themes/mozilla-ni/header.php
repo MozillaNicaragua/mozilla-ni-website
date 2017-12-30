@@ -9,6 +9,8 @@
  * @package mozilla-ni
  */
 
+$header_logo = get_field( 'theme_header_logo', 'option' );
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -16,41 +18,40 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Zilla+Slab:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'mozilla-ni' ); ?></a>
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'mozilla-ni' ); ?></button>
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+	<header class="header-site">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12">
+	                <nav class="nav-container">
+	                    <a href="/" target="_blank">
+	                    	<?php if ( $header_logo ) : ?>
+	                        	<img src="<?php echo $header_logo; ?>" alt="Mozilla Nicaragua" class="primary-logo" />
+	                        <?php else: ?>
+	                        	<img src="<?php echo get_template_directory_uri(); ?>/assets/logo-mozilla-ni.png" alt="Mozilla Nicaragua" class="primary-logo" />
+	                        <?php endif; ?>
+	                    </a>
+	                    <div class="d-flex align-items-center">
+	                    	<ul class="nav ml-3">
+	                            <li class="nav-item">
+	                                <a href="#" class="nav-link">Blog</a>
+	                            </li>
+	                            <li class="nav-item">
+	                                <a href="#" class="nav-link">Eventos</a>
+	                            </li>
+	                            <li>
+	                                <a href="#" class="nav-link">Contacto</a>
+	                            </li>
+	                        </ul>
+	                        <a href="<?php the_field('theme_download_firefox_link', 'option') ?>" class="btn btn-outline-success" target="_blank">Descargar Firefox</a>
+	                    </div>
+	                </nav>
+	            </div>
+	        </div>
+	    </div>
+	</header>

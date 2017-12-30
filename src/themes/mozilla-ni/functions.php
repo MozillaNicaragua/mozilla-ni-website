@@ -45,6 +45,9 @@ if ( ! function_exists( 'mozilla_ni_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'mozilla-ni' ),
+			'footer-one' => esc_html__( 'Footer One', 'mozilla-ni' ),
+			'footer-two' => esc_html__( 'Footer Two', 'mozilla-ni' ),
+			'footer-three' => esc_html__( 'Footer Three', 'mozilla-ni' ),
 		) );
 
 		/*
@@ -118,6 +121,8 @@ add_action( 'widgets_init', 'mozilla_ni_widgets_init' );
  */
 function mozilla_ni_scripts() {
 	wp_enqueue_style( 'mozilla-ni-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'mozilla-ni-vendor', get_template_directory_uri() . '/css/vendor.css' );
+	wp_enqueue_style( 'mozilla-ni-theme', get_template_directory_uri() . '/css/theme.css' );
 
 	wp_enqueue_script( 'mozilla-ni-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
