@@ -18,13 +18,14 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify');
 
 var path = {
-    srcjs: './js/',
-    srcsass: './sass/',
-    distjs: './js/',
-    distcss: './css/'
+    srcjs: './src/js/',
+    srcsass: './src/sass/',
+    distjs: './assets/js/',
+    distcss: './assets/css/'
 };
 
 var scripts = [
+    path.srcjs + 'vendor.js',
     path.srcjs + 'scripts.js',
 ];
 

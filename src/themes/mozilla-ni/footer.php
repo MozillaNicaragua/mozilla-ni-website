@@ -98,7 +98,17 @@ $github = get_field( 'theme_github', 'option' );
         </div>
     </div>
 </footer>
-
+<nav class="mobile-nav text-center" id="mobile-menu">
+    <button type="button" class="close-modal">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    <?php
+        wp_nav_menu( array(
+            'menu'              => 'menu-1',
+            'menu_class'        => 'nav flex-column',
+        ));
+    ?>
+</nav>
 <?php wp_footer(); ?>
 
 </body>

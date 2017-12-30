@@ -33,6 +33,11 @@
     .about-mozilla {
         border-right: 1px solid #505050;
         padding-right: 30px;
+
+        @media ( max-width: 768px ) {
+            border-right: 0;
+            padding-right: 0;
+        }
     }
 
     img {
@@ -43,6 +48,10 @@
 .download-section {
     background: linear-gradient(to right, #4C00AF, #00CDEF);
     padding: 50px 0;
+
+    img {
+        max-width: 100%;
+    }
 }
 
 .blog-section {
@@ -53,4 +62,9 @@
 .members-section {
     padding: 50px 0;
     background-color: $color-gray-light;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
 }

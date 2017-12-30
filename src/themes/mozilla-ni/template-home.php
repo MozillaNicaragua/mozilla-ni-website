@@ -115,7 +115,7 @@ $members = new WP_Query( $member_args );
                     </div>
                     <?php if ( $members->have_posts() ) : ?>
                         <?php while ( $members->have_posts() ) : $members->the_post(); ?>
-                            <div class="col-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                                 <div class="card-member">
                                     <img src="<?php the_post_thumbnail_url('full') ?>" alt="<?php the_title() ?>">
                                     <h4 class="card-name"><?php the_title() ?></h4>

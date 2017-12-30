@@ -36,20 +36,18 @@ $header_logo = get_field( 'theme_header_logo', 'option' );
 	                        	<img src="<?php echo get_template_directory_uri(); ?>/assets/logo-mozilla-ni.png" alt="Mozilla Nicaragua" class="primary-logo" />
 	                        <?php endif; ?>
 	                    </a>
-	                    <div class="d-flex align-items-center">
-	                    	<ul class="nav ml-3">
-	                            <li class="nav-item">
-	                                <a href="#" class="nav-link">Blog</a>
-	                            </li>
-	                            <li class="nav-item">
-	                                <a href="#" class="nav-link">Eventos</a>
-	                            </li>
-	                            <li>
-	                                <a href="#" class="nav-link">Contacto</a>
-	                            </li>
-	                        </ul>
+	                    <div class="d-flex align-items-center desk-menu">
+	                        <?php
+					            wp_nav_menu( array(
+					                'menu'              => 'menu-1',
+					                'menu_class'        => 'nav',
+					            ));
+					        ?>
 	                        <a href="<?php the_field('theme_download_firefox_link', 'option') ?>" class="btn btn-outline-success" target="_blank">Descargar Firefox</a>
 	                    </div>
+	                    <button type="button" class="open-menu">
+	                    	<i class="fa fa-bars" aria-hidden="true"></i>
+	                    </button>
 	                </nav>
 	            </div>
 	        </div>
