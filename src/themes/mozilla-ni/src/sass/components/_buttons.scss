@@ -1,0 +1,26 @@
+.btn-outline-success {
+    border: 2px solid $color-success;
+    border-radius: 50px;
+    color: $color-success;
+    font-weight: bold;
+
+    &:hover {
+        background: $color-success;
+        color: #FFFFFF;
+        border: 2px solid $color-success;
+    }
+}
+
+.btn-rounded-success {
+    border: 2px solid $color-success;
+    border-radius: 50px;
+    color: #FFFFFF;
+    background: $color-success;
+    font-weight: bold;
+
+    &:hover {
+        background: darken($color-success, 8%);
+        color: #FFFFFF;
+        border: 2px solid darken($color-success, 8%);
+    }
+}

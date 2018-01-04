@@ -1,0 +1,40 @@
+.header-site {
+    position: relative;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #dadada;
+    width: 100%;
+    box-shadow: 0px 0px 15px rgba(#000, 0.2);
+    
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 85px;
+
+        a {
+            font-weight: bold;
+        }
+    }
+
+    .open-menu {
+        display: none;
+    }
+
+    @media ( max-width: 768px ) {
+        .desk-menu {
+            display: none!important;
+        }
+
+        .open-menu {
+            display: block;
+            background-color: transparent;
+            border: 0;
+            color: #202020;
+            font-size: 30px;
+        }
+    }
+}
+
+.primary-logo {
+    width: 120px;
+}

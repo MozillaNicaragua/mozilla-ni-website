@@ -1,0 +1,83 @@
+.main {
+    background-color: #f9f9fa;
+}
+
+.hero-page {
+    background: #0B8EF6;
+    background-position: center center;
+    background-size: cover;
+    background-image: url('/assets/mozilla-ni-header.jpg');
+    height: 550px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 100px;
+
+    .title {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 18px;
+        max-width: 450px;
+    }
+
+    .title,
+    p {
+        text-shadow: 0px 0px 30px rgba(0,0,0,0.9)
+    }
+}
+
+.about-page {
+    padding: 50px 0;
+    background-color: #d7d9f2;
+    background-image: url('https://www.mozilla.org/media/img/home/colon-slash-slash.2c709d7c73c3.svg');
+    background-repeat: no-repeat;
+
+    .about-mozilla {
+        border-right: 1px solid #505050;
+        padding-right: 30px;
+
+        @media ( max-width: 768px ) {
+            border-right: 0;
+            padding-right: 0;
+        }
+    }
+
+    img {
+        max-width: 200px;
+    }
+
+}
+
+.download-section {
+    background: linear-gradient(to right, #4C00AF, #00CDEF);
+    padding: 50px 0;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.blog-section {
+    padding: 50px 0;
+    background-color: #FFFFFF;
+}
+
+.members-section {
+    padding: 50px 0;
+    background-color: $color-gray-light;
+}
+
+.not-found-page {
+    padding: 150px 0;
+    background-color: #d7d9f2;
+    background-image: url('https://www.mozilla.org/media/img/home/colon-slash-slash.2c709d7c73c3.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+}

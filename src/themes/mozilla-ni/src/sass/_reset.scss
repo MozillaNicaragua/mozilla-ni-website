@@ -1,0 +1,18 @@
+body,
+p,
+ul,
+blockquote {
+    font-family: $font-primary;
+    font-size: $font-size-base;
+    font-weight: 400;
+    color: $font-primary-text;
+}
+
+p {
+    margin-bottom: 10px!important;
+}
+
+a, button {
+    cursor: pointer;
+    outline: 0;
+}

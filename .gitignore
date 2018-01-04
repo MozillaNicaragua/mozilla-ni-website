@@ -1,0 +1,8 @@
+wp-config.php
+media/
+advanced-custom-fields-pro/
+node_modules/
+cgi-bin/
+website/
+error_log
+indexx.html
