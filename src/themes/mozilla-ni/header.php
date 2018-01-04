@@ -22,6 +22,16 @@ $header_logo = get_field( 'theme_header_logo', 'option' );
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Zilla+Slab:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<?php wp_head(); ?>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111950069-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-111950069-1');
+	</script>
+
 </head>
 
 <body <?php body_class(); ?>>
