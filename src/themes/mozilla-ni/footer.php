@@ -29,21 +29,21 @@ $github = get_field( 'theme_github', 'option' );
                 <ul class="nav">
                 	<?php if ( $facebook ) : ?>
                     <li class="nav-item">
-                        <a href="<?php echo $facebook; ?>" class="nav-link" target="_blank">
+                        <a href="<?php echo $facebook; ?>" class="nav-link">
                             <i class="fa fa-facebook-official" aria-hidden="true"></i>
                         </a>
                     </li>
                 	<?php endif; ?>
                 	<?php if ( $twitter ) : ?>
                     <li class="nav-item">
-                        <a href="<?php echo $twitter; ?>" class="nav-link" target="_blank">
+                        <a href="<?php echo $twitter; ?>" class="nav-link">
                             <i class="fa fa-twitter" aria-hidden="true"></i>
                         </a>
                     </li>
                 	<?php endif; ?>
                 	<?php if ( $github ) : ?>
                     <li class="nav-item">
-                        <a href="<?php echo $github; ?>" class="nav-link" target="_blank">
+                        <a href="<?php echo $github; ?>" class="nav-link">
                             <i class="fa fa-github" aria-hidden="true"></i>
                         </a>
                     </li>
