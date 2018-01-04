@@ -40,22 +40,22 @@ $members = new WP_Query( $member_args );
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <i class="fa fa-shield circle-icons" aria-hidden="true"></i>
-                                <a href="https://advocacy.mozilla.org/es/encrypt/codemoji/1" target="_blank" class="text-black">
-                                    Defiende la encriptación
+                                <a href="https://www.mozilla-hispano.org/advocacy/" target="_blank" class="text-black">
+                                    Defendemos nuestra web
                                 </a>
                             </div>
                             <div class="col-12 col-md-6">
                                 <i class="fa fa-globe circle-icons" aria-hidden="true"></i>
-                                <a href="https://learning.mozilla.org/en-US/" target="_blank" class="text-black">Enseñar la Web</a>
+                                <a href="https://www.mozilla.org/es-ES/about/manifesto/details/" target="_blank" class="text-black">Mozilla manifiesto</a>
                             </div>
                             <div class="col-12 col-md-6">
                                 <i class="fa fa-wrench circle-icons" aria-hidden="true"></i>
-                                <a href="https://www.mozilla.org/en-US/about/policy/lean-data/" target="_blank" class="text-black">Prueba el kit de herramientas Lean Data</a>
+                                <a href="https://aframe.io/" target="_blank" class="text-black">A-Frame Mozilla</a>
                             </div>
                             <div class="col-12 col-md-6">
                                 <i class="fa fa-flag circle-icons" aria-hidden="true"></i>
-                                <a href="https://internethealthreport.org/v01/es/" target="_blank" class="text-black">
-                                    Lee nuestro Reporte de Salud de Internet
+                                <a href="https://www.mozilla.org/es-ES/internet-health/" target="_blank" class="text-black">
+                                    Salud de internet
                                 </a>
                             </div>
                         </div>
