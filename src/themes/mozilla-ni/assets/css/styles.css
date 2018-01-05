@@ -822,3 +822,19 @@ h1 {
     opacity: 1;
     visibility: visible;
     z-index: 99; }
+
+.nav-category li.menu-item {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  .nav-category li.menu-item a {
+    padding: 1em 1.3em;
+    text-decoration: none; }
+  .nav-category li.menu-item:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
+  .nav-category li.menu-item.current-menu-item {
+    background-color: rgba(69, 161, 255, 0.8);
+    border-bottom: 2px solid rgba(69, 161, 255, 0.8); }
+    .nav-category li.menu-item.current-menu-item a {
+      font-weight: bold;
+      color: #FFFFFF; }

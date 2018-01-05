@@ -19,17 +19,30 @@ get_header(); ?>
 				<div class="col-12 text-center">
 					<h1 class="title mb-5">Blog</h1>
 				</div>
-				<?php if ( have_posts() ) : ?>
-					<?php while ( have_posts() ) : the_post(); ?>
-						<div class="col-12 col-md-6 col-lg-4">
-                            <?php get_template_part( 'template-parts/blog', 'card' ); ?>
-                        </div>
-					<?php endwhile; ?>
-                    <div class="col-12 text-center paginate-buttons mb-5">
-                        <?php previous_posts_link( 'Regresar' ); ?>
-                        <?php echo get_next_posts_link( 'Siguiente' ); ?>
-                    </div>
-				<?php endif; ?>
+                <div class="col-12 col-md-4">
+                    <?php
+                        wp_nav_menu( array(
+                            'theme_location'    => 'category-menu',
+                            'menu'              => 'category-menu',
+                            'menu_class'        => 'nav flex-column nav-pills nav-category',
+                        ));
+                    ?>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="row">
+        				<?php if ( have_posts() ) : ?>
+        					<?php while ( have_posts() ) : the_post(); ?>
+        						<div class="col-12 col-md-6">
+                                    <?php get_template_part( 'template-parts/blog', 'card' ); ?>
+                                </div>
+        					<?php endwhile; ?>
+                            <div class="col-12 text-center paginate-buttons mb-5">
+                                <?php previous_posts_link( 'Regresar' ); ?>
+                                <?php echo get_next_posts_link( 'Siguiente' ); ?>
+                            </div>
+        				<?php endif; ?>                        
+                    </div>    
+                </div>
 			</div>
 		</div>
 	</main>

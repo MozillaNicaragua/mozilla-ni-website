@@ -44,3 +44,30 @@
         z-index: 99;
     }
 }
+
+.nav-category {
+
+    li.menu-item {
+        border-bottom: 2px solid rgba(#000, 0.1);
+        transition: all .3s;
+        
+        a {
+            padding: 1em 1.3em;
+            text-decoration: none;
+        }
+
+        &:hover {
+            background-color: rgba(#000, 0.1);
+        }
+
+        &.current-menu-item {
+            background-color: rgba($color-primary, 0.8);
+            border-bottom: 2px solid rgba($color-primary, 0.8);
+
+            a {
+                font-weight: bold;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

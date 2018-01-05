@@ -45,6 +45,7 @@ if ( ! function_exists( 'mozilla_ni_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'mozilla-ni' ),
+			'category-menu' => esc_html__('Category Menu', 'mozilla-ni'),
 			'footer-one' => esc_html__( 'Footer One', 'mozilla-ni' ),
 			'footer-two' => esc_html__( 'Footer Two', 'mozilla-ni' ),
 			'footer-three' => esc_html__( 'Footer Three', 'mozilla-ni' ),

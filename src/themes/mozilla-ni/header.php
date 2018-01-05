@@ -50,6 +50,7 @@ $header_logo = get_field( 'theme_header_logo', 'option' );
 	                    <div class="d-flex align-items-center desk-menu">
 	                        <?php
 					            wp_nav_menu( array(
+					            	'theme_location'	=> 'menu-1',
 					                'menu'              => 'menu-1',
 					                'menu_class'        => 'nav',
 					            ));
