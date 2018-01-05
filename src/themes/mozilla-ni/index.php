@@ -13,7 +13,6 @@
  */
 
 get_header(); ?>
-
 	<main class="main">
 		<div class="container pt-5">
 			<div class="row">
@@ -26,10 +25,17 @@ get_header(); ?>
                             <?php get_template_part( 'template-parts/blog', 'card' ); ?>
                         </div>
 					<?php endwhile; ?>
+                    <div class="col-12 text-center paginate-buttons mb-5">
+                        <?php previous_posts_link( 'Regresar' ); ?>
+                        <?php echo get_next_posts_link( 'Siguiente' ); ?>
+                    </div>
 				<?php endif; ?>
 			</div>
 		</div>
 	</main>
-
-<?php
-get_footer();
+<?php get_footer(); ?>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.paginate-buttons').find('a').addClass('btn btn-primary');
+    });
+</script>
