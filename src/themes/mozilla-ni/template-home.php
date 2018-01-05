@@ -19,7 +19,7 @@ $members = new WP_Query( $member_args );
                 <div class="row">
                     <div class="col-12 mt-5">
                         <h1 class="title text-white">Mozilla Nicaragua</h1>
-                        <p class="text-white">Somos una comunidad que apoya la innovacion y la web abierta para todos.</p>
+                        <p class="text-white">Somos una comunidad que apoya la innovación y la web abierta para todos.</p>
                     </div>
                 </div>
             </div>

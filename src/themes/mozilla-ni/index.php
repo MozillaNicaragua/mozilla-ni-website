@@ -24,7 +24,7 @@ get_header(); ?>
                         wp_nav_menu( array(
                             'theme_location'    => 'category-menu',
                             'menu'              => 'category-menu',
-                            'menu_class'        => 'nav flex-column nav-pills nav-category',
+                            'menu_class'        => 'nav flex-column nav-pills nav-category mb-3',
                         ));
                     ?>
                 </div>
