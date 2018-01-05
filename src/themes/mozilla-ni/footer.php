@@ -104,6 +104,7 @@ $github = get_field( 'theme_github', 'option' );
     </button>
     <?php
         wp_nav_menu( array(
+		'theme_location' => 'menu-1',
             'menu'              => 'menu-1',
             'menu_class'        => 'nav flex-column',
         ));
