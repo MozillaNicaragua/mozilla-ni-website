@@ -6,3 +6,4 @@ cgi-bin/
 website/
 error_log
 indexx.html
+*.sql
