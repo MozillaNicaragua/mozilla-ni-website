@@ -25,6 +25,48 @@
     }
 }
 
+.article {
+    position: relative;
+    background-color: #FFF;
+    border: 0 solid hsla(0,0%,100%,.25);
+    border-radius: 2px;
+    box-shadow: 0 1px 5px #dcdcdc;
+    color: #2a2a2a;
+    overflow: hidden;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    .article-thumbnail {
+        max-height: 160px;
+        overflow: hidden;
+        width: 100%;
+
+        img { 
+            max-width: 100%; 
+            height: auto;
+        }
+    }
+
+    .article-body {
+        padding: 25px;
+
+        .article-date {
+            text-transform: uppercase;
+            color: $color-primary;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .article-headline {
+            font-size: 16px;
+            margin-bottom: 0;
+            line-height: 1.6;
+
+            a { color: $color-black; }
+        }
+    }
+}
+
 .card-member {
     position: relative;
     text-align: center;

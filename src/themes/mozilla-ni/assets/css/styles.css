@@ -712,6 +712,37 @@ h1 {
   .card-blog .card-excerpt {
     font-family: "Zilla Slab", monospace; }
 
+.article {
+  position: relative;
+  background-color: #FFF;
+  border: 0 solid rgba(255, 255, 255, 0.25);
+  border-radius: 2px;
+  box-shadow: 0 1px 5px #dcdcdc;
+  color: #2a2a2a;
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 30px; }
+  .article .article-thumbnail {
+    max-height: 160px;
+    overflow: hidden;
+    width: 100%; }
+    .article .article-thumbnail img {
+      max-width: 100%;
+      height: auto; }
+  .article .article-body {
+    padding: 25px; }
+    .article .article-body .article-date {
+      text-transform: uppercase;
+      color: #45a1ff;
+      font-size: 13px;
+      font-weight: bold; }
+    .article .article-body .article-headline {
+      font-size: 16px;
+      margin-bottom: 0;
+      line-height: 1.6; }
+      .article .article-body .article-headline a {
+        color: #0c0c0d; }
+
 .card-member {
   position: relative;
   text-align: center; }

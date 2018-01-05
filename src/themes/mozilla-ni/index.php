@@ -23,17 +23,7 @@ get_header(); ?>
 				<?php if ( have_posts() ) : ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 						<div class="col-12 col-md-6 col-lg-4">
-                            <div class="card-blog">
-                                <div class="card-image">
-                                    <img src="<?php the_post_thumbnail_url('card-blog'); ?>" alt="<?php the_title(); ?>">
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                    </h4>
-                                    <p class="card-excerpt"><?php the_excerpt(); ?></p>
-                                </div>
-                            </div>
+                            <?php get_template_part( 'template-parts/blog', 'card' ); ?>
                         </div>
 					<?php endwhile; ?>
 				<?php endif; ?>
