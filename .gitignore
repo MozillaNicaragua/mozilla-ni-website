@@ -7,3 +7,5 @@ website/
 error_log
 indexx.html
 *.sql
+src/cache/
+src/cache/all/index.html
