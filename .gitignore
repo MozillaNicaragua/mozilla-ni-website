@@ -9,3 +9,4 @@ indexx.html
 *.sql
 src/cache/
 src/cache/all/index.html
+.htaccess
